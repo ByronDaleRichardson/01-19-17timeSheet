@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Sheet</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="jumbotron" style="">
+	<h1 class="text-center">Employee Data Sheet</h1>
+	<h3 class="text-center">List of Employees and Hours</h3>
+</div>
+
+<div class="row"></div>
+
+	<div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title"><strong>Current Employees</strong></h3>
+        </div>
+        <div class="panel-body">
+           	<table class="table table-hover" id='employee-table'>
+               	<thead>
+               		<tr>
+                   		<th>Employee Name</th>
+                   		<th>Role</th>
+                   		<th>Start Date</th>
+                   		<th>Months Worked</th>
+                   		<th>Monthly Rate ($)</th>
+                   		<th>Total Billed ($)</th>
+               		</tr>
+               	</thead>
+            <tbody>
+            </tbody>
+           	</table>
+        </div>
+    </div>
+	
+    	<div class="panel panel-primary">
+            <div class="panel-heading">
+              	<h3 class="panel-title"><strong>Add Employee</strong></h3>
+            </div>
+            <div class="panel-body">
+              <!-- Entry Form -->
+              	<form>
+                	<div class="form-group">
+                  		<label for="employee-name-input">Employee Name</label>
+                  		<input class="form-control" id="employee-name-input" type="text">
+                	</div>
+                	<div class="form-group">
+                  		<label for="role-input">Role</label>
+                  		<input class="form-control" id="role-input" type="text">
+                	</div>
+                	<div class="form-group">
+                  		<label for="start-input">Start Date (DD/MM/YY - ex: 01/01/89)</label>
+                  		<input class="form-control" id="start-input" type="text">
+                	</div>
+                	<div class="form-group">
+                  		<label for="rate-input">Monthly Rate</label>
+                  		<input class="form-control" id="rate-input" type="text">
+                	</div>
+                	<button class="btn btn-primary" id="add-employee-btn" type="submit">Submit</button>
+              	</form>
+			</div>
+
+
+</body>
+</html>
